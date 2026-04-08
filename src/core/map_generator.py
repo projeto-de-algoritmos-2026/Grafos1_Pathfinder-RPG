@@ -1,6 +1,5 @@
-from constants import TYPES
+from src.core.constants import TYPES
 import random
-
 
 def generate_map(m: int, n: int) -> list[list[int]]:
     """Função que retorna uma grid MxN, mapa do RPG."""
