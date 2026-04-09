@@ -9,13 +9,13 @@ class TypeTerrain:
 
 
 TYPES = {
-    0: TypeTerrain("Asfalto", 1, (105, 105, 105)),                 # Cinza
-    1: TypeTerrain("Grama", 2, (34, 139, 34)),                     # Verde
-    2: TypeTerrain("Floresta", 5, (0, 100, 0)),                    # Verde Escuro
-    3: TypeTerrain("Deserto", 8, (237, 201, 175)),                 # Areia
-    4: TypeTerrain("Lama", 12, (139, 69, 19)),                     # Marrom
-    5: TypeTerrain("Pântano", 20, (72, 61, 139)),                  # Roxo/Azulado escuro
-    6: TypeTerrain("Água", 22, (30, 144, 255)),                    # Azul
-    7: TypeTerrain("Montanha", 60, (139, 137, 137)),               # Cinza pedra
-    8: TypeTerrain("Falha na Matrix", float('inf'), (0, 0, 0)),    # Preto
+    0: TypeTerrain("Asfalto", 1, (204, 204, 204)),                # Cinza
+    1: TypeTerrain("Grama", 2, (147, 196, 125)),                  # Verde
+    2: TypeTerrain("Floresta", 5, (39, 78, 19)),                  # Verde Escuro
+    3: TypeTerrain("Deserto", 8, (241, 194, 50)),                 # Areia
+    4: TypeTerrain("Lama", 12, (120, 63, 4)),                     # Marrom
+    5: TypeTerrain("Pântano", 20, (116, 27, 71)),                 # Roxo/Azulado escuro
+    6: TypeTerrain("Água", 22, (28, 69, 135)),                    # Azul
+    7: TypeTerrain("Montanha", 60, (67, 67, 67)),                 # Cinza pedra
+    8: TypeTerrain("Falha na Matrix", float('inf'), (0, 0, 0)),   # Preto
 }
