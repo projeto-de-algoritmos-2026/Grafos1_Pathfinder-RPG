@@ -1,7 +1,7 @@
 import pygame
 import sys
 
-from src.core.map_generator import generate_map
+from src.core.generators import generate_map
 from src.core.constants import TYPES
 
 TAMANHO_BLOCO = 30
@@ -14,7 +14,7 @@ FPS = 60
 
 def main():
     pygame.init()
-    
+
     # criando a janela principal
     tela = pygame.display.set_mode((LARGURA_TELA, ALTURA_TELA))
     pygame.display.set_caption("Pathfinder RPG")
@@ -34,14 +34,14 @@ def main():
         for linha in range(LINHAS):
             for coluna in range(COLUNAS):
                 terreno = mapa_grid[linha][coluna]
-                
-                cor = terreno.color 
+
+                cor = terreno.color
 
                 x = coluna * TAMANHO_BLOCO
                 y = linha * TAMANHO_BLOCO
 
                 pygame.draw.rect(tela, cor, (x, y, TAMANHO_BLOCO, TAMANHO_BLOCO))
-                
+
                 pygame.draw.rect(tela, (50, 50, 50), (x, y, TAMANHO_BLOCO, TAMANHO_BLOCO), 1)
 
         # atualizar o ecrã
