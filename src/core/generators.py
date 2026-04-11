@@ -1,5 +1,6 @@
 from src.core.constants import TYPES, TypeTerrain
 import random, math
+from noise import pnoise2
 
 
 def generate_map(m: int, n: int) -> list[list[TypeTerrain]]:
@@ -8,33 +9,33 @@ def generate_map(m: int, n: int) -> list[list[TypeTerrain]]:
     e a lista de adjacência desse mapa.
     """
 
-    types_of_terrain = list(TYPES.keys())
-    probs_of_each_terrain = [
-        0.2,   # Asfalto
-        0.2,   # Grama
-        0.1,   # Floresta
-        0.1,   # Deserto
-        0.05,  # Lama
-        0.1,   # Pântano
-        0.15,  # Água
-        0.05,  # Montanha
-        0.05   # Falha na matrix
-    ]
-
     # Criando a matriz
     grid = []
+    scale = 15
 
     for i in range(m):
         row = []
         for j in range(n):
 
-            type_of_terrain = random.choices(
-                types_of_terrain,
-                weights=probs_of_each_terrain
-            )[0]
+            value = pnoise2(i / scale, j / scale)
 
-            new_terrain = TYPES[type_of_terrain]
-            row.append(new_terrain)
+            if value < -0.3:
+                terrain = TYPES[6]  # Água
+            elif value < -0.1:
+                terrain = TYPES[5]  # Pântano
+            elif value < 0.1:
+                terrain = TYPES[1]  # Grama
+            elif value < 0.25:
+                terrain = TYPES[2]  # Floresta
+            elif value < 0.4:
+                terrain = TYPES[3]  # Deserto
+            else:
+                terrain = TYPES[7]  # Montanha
+
+            if random.random() < 0.07:  # 7% de chance de ser falha na matrix
+                terrain = TYPES[8]
+
+            row.append(terrain)
 
         grid.append(row)
 

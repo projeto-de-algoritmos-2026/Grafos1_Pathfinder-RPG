@@ -4,12 +4,20 @@ import sys
 from src.core.generators import generate_map
 from src.core.constants import TYPES
 
-TAMANHO_BLOCO = 30
-LINHAS = 20
-COLUNAS = 25
+LINHAS = 150
+COLUNAS = 150
+
+MAX_LARGURA = 800
+MAX_ALTURA = 800
+
+TAMANHO_BLOCO = max(1, min(
+    MAX_LARGURA // COLUNAS,
+    MAX_ALTURA // LINHAS
+))
 
 LARGURA_TELA = COLUNAS * TAMANHO_BLOCO
 ALTURA_TELA = LINHAS * TAMANHO_BLOCO
+
 FPS = 60
 
 def main():
