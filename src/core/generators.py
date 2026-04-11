@@ -11,13 +11,16 @@ def generate_map(m: int, n: int) -> list[list[TypeTerrain]]:
 
     # Criando a matriz
     grid = []
-    scale = 15
+    scale = max(5.0, m/5.0)
+
+    offset_x = random.uniform(0, 10000)
+    offset_y = random.uniform(0, 10000)
 
     for i in range(m):
         row = []
         for j in range(n):
 
-            value = pnoise2(i / scale, j / scale)
+            value = pnoise2((i / scale) + offset_x, (j / scale) + offset_y)
 
             if value < -0.3:
                 terrain = TYPES[6]  # Água
