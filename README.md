@@ -29,59 +29,76 @@ O projeto utiliza um sistema de pesos para representar o custo de movimento em d
       <td><b>Asfalto</b></td>
       <td>1</td>
       <td>-</td>
-      <td align="center"><span style="background-color: #cccccc; padding: 2px 12px; border: 1px solid #000; border-radius: 2px;"></span></td>
+      <td align="center">
+        <img src="https://dummyimage.com/25x25/cccccc/000000.png" />
+      </td>
     </tr>
     <tr>
       <td><b>Grama</b></td>
       <td>2</td>
       <td>-</td>
-      <td align="center"><span style="background-color: #93c47d; padding: 2px 12px; border: 1px solid #000; border-radius: 2px;"></span></td>
+      <td align="center">
+        <img src="https://dummyimage.com/25x25/93c47d/000000.png" />
+      </td>
     </tr>
     <tr>
       <td><b>Floresta</b></td>
       <td>5</td>
       <td>-</td>
-      <td align="center"><span style="background-color: #274e13; padding: 2px 12px; border: 1px solid #000; border-radius: 2px;"></span></td>
+      <td align="center">
+        <img src="https://dummyimage.com/25x25/274e13/ffffff.png" />
+      </td>
     </tr>
     <tr>
       <td><b>Deserto</b></td>
       <td>8</td>
       <td>-</td>
-      <td align="center"><span style="background-color: #f1c232; padding: 2px 12px; border: 1px solid #000; border-radius: 2px;"></span></td>
+      <td align="center">
+        <img src="https://dummyimage.com/25x25/f1c232/000000.png" />
+      </td>
     </tr>
     <tr>
       <td><b>Lama</b></td>
       <td>12</td>
       <td>-</td>
-      <td align="center"><span style="background-color: #783f04; padding: 2px 12px; border: 1px solid #000; border-radius: 2px;"></span></td>
+      <td align="center">
+        <img src="https://dummyimage.com/25x25/783f04/ffffff.png" />
+      </td>
     </tr>
     <tr>
       <td><b>Pântano</b></td>
       <td>20</td>
       <td>-</td>
-      <td align="center"><span style="background-color: #741b47; padding: 2px 12px; border: 1px solid #000; border-radius: 2px;"></span></td>
+      <td align="center">
+        <img src="https://dummyimage.com/25x25/741b47/ffffff.png" />
+      </td>
     </tr>
     <tr>
       <td><b>Água</b></td>
       <td>22</td>
       <td>-</td>
-      <td align="center"><span style="background-color: #1c4587; padding: 2px 12px; border: 1px solid #000; border-radius: 2px;"></span></td>
+      <td align="center">
+        <img src="https://dummyimage.com/25x25/1c4587/ffffff.png" />
+      </td>
     </tr>
     <tr>
       <td><b>Montanha</b></td>
       <td>60</td>
       <td>-</td>
-      <td align="center"><span style="background-color: #434343; padding: 2px 12px; border: 1px solid #000; border-radius: 2px;"></span></td>
+      <td align="center">
+        <img src="https://dummyimage.com/25x25/434343/ffffff.png" />
+      </td>
     </tr>
     <tr>
       <td><b>Falha na Matrix</b></td>
       <td>∞</td>
       <td><b>Intransponível.</b> Corta a conexão entre as células.</td>
-      <td align="center"><span style="background-color: #000000; padding: 2px 12px; border: 1px solid #000; border-radius: 2px;"></span></td>
+      <td align="center">
+        <img src="https://dummyimage.com/25x25/000000/ffffff.png" />
+      </td>
     </tr>
   </tbody>
 </table>
-
 ## Screenshots
 
 ### Geração de Mapa
