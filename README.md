@@ -6,6 +6,8 @@
 | 23/1027121  |  José Victor Gabriel Menezes da Costa |
 | 23/1011284  |  Eduardo Silva Waski                  |
 
+**Link Apresentação**: [https://www.youtube.com/watch?v=Olproc74RaE](https://www.youtube.com/watch?v=Olproc74RaE)
+
 ## Sobre
 O Pathfinder RPG é uma ferramenta de simulação de busca de caminhos em ambientes de jogos de mesa. O projeto utiliza uma <b>matriz MxN</b>  para representar um mapa com diferentes biomas (Grama, Floresta, Pântano, etc.), onde cada terreno possui um <b>custo de movimentação</b> específico.
 <br><br>
@@ -99,6 +101,7 @@ O projeto utiliza um sistema de pesos para representar o custo de movimento em d
     </tr>
   </tbody>
 </table>
+
 ## Screenshots
 
 ### Geração de Mapa
@@ -108,7 +111,7 @@ O usuário pode gerar um mapa quadrado com o tamanho **mínimo de 10x10**, e tam
   *Grid: 10x10*
 
 
-![Interface da Grid 200x200](assets/map_size_10.png)
+![Interface da Grid 200x200](assets/map_size_200.png)
   *Grid: 200x200*
 
 ### Dijkstra em Ação
